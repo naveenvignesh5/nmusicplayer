@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.theace56.naveenvignesh.nplayer.equaliser">
+
+    <SeekBar
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:id="@+id/seek2"
+
+        android:splitTrack="false"
+        android:nestedScrollingEnabled="false"
+        android:indeterminate="false"
+        android:layout_above="@+id/t3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp" />
+
+    <SeekBar
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:id="@+id/seek3"
+        android:splitTrack="false"
+        android:nestedScrollingEnabled="false"
+        android:indeterminate="false"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_toStartOf="@+id/textView12" />
+
+    <SeekBar
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:id="@+id/seek4"
+        android:splitTrack="false"
+        android:nestedScrollingEnabled="false"
+        android:indeterminate="false"
+        android:layout_below="@+id/t4"
+        android:layout_toEndOf="@+id/textView8" />
+
+    <SeekBar
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:id="@+id/seek5"
+        android:layout_marginTop="44dp"
+        android:splitTrack="false"
+        android:nestedScrollingEnabled="false"
+        android:indeterminate="false"
+        android:layout_below="@+id/seek4"
+        android:layout_alignStart="@+id/seek4" />
+
+    <SeekBar
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:id="@+id/seek1"
+        android:splitTrack="false"
+        android:nestedScrollingEnabled="false"
+        android:indeterminate="false"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/eq_tit"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Equalizer"
+        android:textStyle="bold"
+        android:textAppearance="@style/TitleRow"
+        android:id="@+id/eq_tit"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="-15db"
+        android:id="@+id/textView5"
+        android:layout_alignTop="@+id/seek1"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="-15db"
+        android:id="@+id/textView6"
+        android:layout_alignBottom="@+id/seek2"
+        android:layout_toStartOf="@+id/seek2"
+        android:layout_marginBottom="9dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="-15db"
+        android:id="@+id/textView7"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/seek3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="-15db"
+        android:id="@+id/textView8"
+        android:layout_alignBottom="@+id/seek4"
+        android:layout_alignEnd="@+id/textView7"
+        android:layout_marginBottom="13dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="-15db"
+        android:id="@+id/textView9"
+        android:layout_alignBottom="@+id/seek5"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginBottom="13dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="15db"
+        android:id="@+id/textView10"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toEndOf="@+id/seek1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="15db"
+        android:id="@+id/textView11"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_toEndOf="@+id/seek2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="15db"
+        android:id="@+id/textView12"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/textView11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="15db"
+        android:id="@+id/textView13"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_toEndOf="@+id/seek4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="15db"
+        android:id="@+id/textView14"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_toEndOf="@+id/seek5" />
+
+    <com.theace56.naveenvignesh.nplayer.VisualizerView
+        android:id="@+id/visview"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@+id/seek5"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/t1"
+        android:layout_above="@+id/textView5"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/t2"
+        android:layout_above="@+id/textView11"
+        android:layout_alignEnd="@+id/t1"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/t3"
+        android:layout_above="@+id/seek3"
+        android:layout_alignStart="@+id/t2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/t4"
+        android:layout_below="@+id/seek3"
+        android:layout_alignStart="@+id/t3"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/t5"
+        android:layout_above="@+id/textView9"
+        android:layout_alignStart="@+id/t4"
+        android:layout_marginBottom="11dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eq_sp"
+        android:layout_toStartOf="@+id/eq_tit"
+        android:layout_above="@+id/eq_seekm"
+        android:layout_below="@+id/visview" />
+
+    <SeekBar
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:indeterminate="false"
+        android:id="@+id/eq_seekm"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/visview"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=">"
+        android:id="@+id/eq_play"
+        android:layout_above="@+id/eq_seekm"
+        android:layout_alignEnd="@+id/eq_tit" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="||"
+        android:id="@+id/eq_pause"
+        android:layout_alignTop="@+id/eq_stop"
+        android:layout_toEndOf="@+id/eq_play" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="■"
+        android:onClick="stopeq"
+        android:id="@+id/eq_stop"
+        android:layout_above="@+id/eq_seekm"
+        android:layout_alignEnd="@+id/textView14" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:onClick="chipeq"
+        android:id="@+id/eq_chip"
+        android:layout_alignTop="@+id/eq_play"
+        android:layout_toStartOf="@+id/eq_play" />
+
+</RelativeLayout>

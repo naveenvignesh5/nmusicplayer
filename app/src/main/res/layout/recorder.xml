@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffdd32"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sing Away !!!"
+        android:textStyle="bold"
+        android:textAppearance="@style/TitleRow"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:id="@+id/textView" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="220dp"
+        android:src="@drawable/chipmunks"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="44dp"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:id="@+id/imageView" />
+
+    <ImageButton
+        android:onClick="recordsound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffdd32"
+        android:id="@+id/rec_record"
+        android:src="@drawable/record"
+        android:layout_alignTop="@+id/rec_stop"
+        android:layout_toStartOf="@+id/imageView" />
+
+    <ImageButton
+        android:onClick="stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/stop"
+        android:background="#ffdd32"
+        android:id="@+id/rec_stop"
+        android:layout_below="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginTop="34dp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/rec_seek"
+        android:progressBackgroundTint="#aa1145"
+        android:indeterminate="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="54dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:id="@+id/rec_chip"
+        android:onClick="chip"
+        android:layout_above="@+id/rec_seek"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=">"
+        android:onClick="play"
+        android:id="@+id/rec_play"
+        android:layout_above="@+id/rec_chip"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginStart="23dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="||"
+        android:onClick="pause"
+        android:id="@+id/rec_pause"
+        android:layout_above="@+id/rec_chip"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_marginEnd="24dp" />
+
+
+</RelativeLayout>

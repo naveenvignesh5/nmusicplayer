@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Basic XML code to declare menu items-->
+
+    <item  android:id="@+id/item2"
+        android:title="@string/menuitem2" />
+    <item android:id="@+id/item3"
+        android:title="Show Recordings"/>
+    <item android:id="@+id/item4"
+        android:title="Equaliser"/>
+    <item android:id="@+id/item5"
+        android:title="Credits"/>
+</menu>

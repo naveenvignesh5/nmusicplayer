@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.theace56.naveenvignesh.nplayer.credits">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/naveen"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:id="@+id/imageView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by"
+        android:textSize="15pt"
+        android:id="@+id/cr_tv1"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Naveen Vignesh.B"
+        android:textSize="14pt"
+        android:textColor="#1253ee"
+        android:id="@+id/cr_tv2"
+        android:layout_below="@+id/cr_tv1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Source Project"
+        android:textSize="11pt"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/cr_tv2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Git Hub"
+        android:onClick="github"
+        android:textSize="7pt"
+        android:textColor="#ffffff"
+        android:background="#aa1234"
+        android:id="@+id/cr_bt1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="naveenvignesh5.nv@gmail.com"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/cr_tv2"
+        android:layout_alignStart="@+id/cr_tv1"
+        android:layout_marginTop="17dp" />
+</RelativeLayout>
